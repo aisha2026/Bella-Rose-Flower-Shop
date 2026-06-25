@@ -2,102 +2,52 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تطبيق EduPlan لتنظيم الدراسة</title>
+    <title>موقع بيلا روز للزهور</title>
 </head>
-<body>
+<body bgcolor="#FFE4E1" text="#333333">
 
-    <!-- الجزء العلوي للموقع -->
-    <header>
-        <h1>موقع EduPlan لتنظيم الجدول الدراسي</h1>
-        <p>يساعد الطالب على تنظيم المواد الدراسية والواجبات.</p>
-    </header>
+    <!-- رأس الصفحة -->
+    <center>
+        <h1>محل Bella Rose للورود الطبيعية</h1>
+        <p>أهلاً بكم في موقعنا البسيط لبيع أجمل الزهور</p>
+        <hr width="50%">
+    </center>
+
+    <!-- محتوى الصفحة -->
+    <h3>من نحن؟</h3>
+    <p>نحن محل بيلا روز، نقوم بتنسيق باقات ورد طبيعية لكل المناسبات هدايا، وعيد ميلاد، وأفراح. خدماتنا سريعة وتوصيلنا ممتاز.</p>
 
     <hr>
 
-    <!-- المحتوى الرئيسي للموقع -->
-    <main>
+    <h3>أنواع الورد المتوفرة عندنا:</h3>
+    <table border="1" cellpadding="10" cellspacing="0" bgcolor="#FFFFFF">
+        <tr>
+            <th>نوع الورد</th>
+            <th>السعر بالدينار</th>
+        </tr>
+        <tr>
+            <td>ورد جوري أحمر</td>
+            <td>5 دينار</td>
+        <tr/>
+        <tr>
+            <td>ورد الياسمين</td>
+            <td>4 دينار</td>
+        </tr>
+        <tr>
+            <td>باقة توليب كاملة</td>
+            <td>45 دينار</td>
+        </tr>
+    </table>
 
-        <!-- قسم الجدول الدراسي -->
-        <section>
-            <h2>الجدول الدراسي الأسبوعي</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>اليوم</th>
-                        <th>المادة</th>
-                        <th>الوقت</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>الأحد</td>
-                        <td>برمجة الويب</td>
-                        <td>4:00 مساءً</td>
-                    </tr>
-                    <tr>
-                        <td>الثلاثاء</td>
-                        <td>رياضيات</td>
-                        <td>6:00 مساءً</td>
-                    </tr>
-                    <tr>
-                        <td>الخميس</td>
-                        <td>لغة إنجليزية</td>
-                        <td>2:00 ظهرًا</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+    <hr>
 
-        <hr>
+    <!-- نموذج تواصل بسيط -->
+    <h3>لطلب باقة ورد أرسل لنا:</h3>
+    <form>
+        <label>اسمك:</label> <input type="text" name="username"><br><br>
+        <label>نوع الورد المطلوب:</label> <input type="text" name="flower"><br><br>
+        <input type="submit" value="إرسال الطلب">
+    </form>
 
-        <!-- قسم إضافة واجب جديد -->
-        <section>
-            <h2>إضافة واجب جديد</h2>
-            <form>
-                <div>
-                    <label for="homework-name">اسم الواجب:</label>
-                    <input type="text" id="homework-name" placeholder="اكتب الواجب هنا">
-                </div>
-
-                <br>
-
-                <div>
-                    <label for="subject-select">اختر المادة:</label>
-                    <select id="subject-select">
-                        <option value="" disabled selected>-- اختر المادة من القائمة --</option>
-                        <option value="web">برمجة الويب</option>
-                        <option value="math">رياضيات</option>
-                        <option value="english">لغة إنجليزية</option>
-                    </select>
-                </div>
-
-                <br>
-
-                <div>
-                    <label for="due-date">التاريخ:</label>
-                    <input type="date" id="due-date">
-                </div>
-
-                <br>
-
-                <button type="submit">إضافة الواجب</button>
-            </form>
-        </section>
-
-        <hr>
-
-        <!-- قسم المهام اليومية -->
-        <section>
-            <h2>المهام المطلوبة اليوم</h2>
-            <ul>
-                <li>مراجعة محاضرة HTML الأولى</li>
-                <li>حل تمارين التفاضل</li>
-                <li>حفظ مفردات اللغة الإنجليزية</li>
-            </ul>
-        </section>
-
-    </main>
-<script src="script.js"></script>
 </body>
 </html>
