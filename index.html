@@ -3,51 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <title>موقع بيلا روز للزهور</title>
+    <style>
+        body {
+            background-color: #F8F5F0;
+            color: #4A4A4A;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .main-box {
+            background-color: #ffffff;
+            border: 1px solid #D9C8A9;
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 25px;
+        }
+        .header-section {
+            text-align: center;
+            border-bottom: 2px solid #D9C8A9;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #6B4E31;
+            display: inline;
+            font-size: 28px;
+        }
+        .title-icon {
+            width: 35px;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+        h3 {
+            color: #6B4E31;
+            text-align: right;
+            margin-top: 20px;
+        }
+        p {
+            text-align: right;
+            font-size: 16px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #D9C8A9;
+            padding: 10px;
+            text-align: right;
+        }
+        th {
+            background-color: #D9C8A9;
+            color: white;
+        }
+        form {
+            text-align: right;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #D9C8A9;
+        }
+        input[type="submit"] {
+            background-color: #6B4E31;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+    </style>
 </head>
-<body bgcolor="#FFE4E1" text="#333333">
+<body>
 
-    <!-- رأس الصفحة -->
-    <center>
-        <h1>محل Bella Rose للورود الطبيعية</h1>
-        <p>أهلاً بكم في موقعنا البسيط لبيع أجمل الزهور</p>
-        <hr width="50%">
-    </center>
+    <div class="main-box">
+        <div class="header-section">
+            <img src="https://images.unsplash.com/photo-1533616688419-b7a585564566?q=80&w=150" alt="وردة" class="title-icon">
+            <h1>محل Bella Rose للورود</h1>
+            <p style="text-align: center; margin-top: 10px;">أهلاً بكم في موقعنا البسيط لبيع أجمل الزهور</p>
+        </div>
 
-    <!-- محتوى الصفحة -->
-    <h3>من نحن؟</h3>
-    <p>نحن محل بيلا روز، نقوم بتنسيق باقات ورد طبيعية لكل المناسبات هدايا، وعيد ميلاد، وأفراح. خدماتنا سريعة وتوصيلنا ممتاز.</p>
+        <h3>من نحن؟</h3>
+        <p>نحن محل بيلا روز، نقوم بتنسيق باقات ورد طبيعية لكل المناسبات؛ هدايا، وعيد ميلاد، وأفراح. خدماتنا سريعة وتوصيلنا ممتاز.</p>
 
-    <hr>
+        <h3>أنواع الورد المتوفرة عندنا:</h3>
+        <table>
+            <tr>
+                <th>نوع الورد</th>
+                <th>السعر بالدينار</th>
+            </tr>
+            <tr>
+                <td>ورد جوري أحمر</td>
+                <td>5 دينار</td>
+            </tr>
+            <tr>
+                <td>ورد الياسمين</td>
+                <td>4 دينار</td>
+            </tr>
+            <tr>
+                <td>باقة توليب كاملة</td>
+                <td>45 دينار</td>
+            </tr>
+        </table>
 
-    <h3>أنواع الورد المتوفرة عندنا:</h3>
-    <table border="1" cellpadding="10" cellspacing="0" bgcolor="#FFFFFF">
-        <tr>
-            <th>نوع الورد</th>
-            <th>السعر بالدينار</th>
-        </tr>
-        <tr>
-            <td>ورد جوري أحمر</td>
-            <td>5 دينار</td>
-        <tr/>
-        <tr>
-            <td>ورد الياسمين</td>
-            <td>4 دينار</td>
-        </tr>
-        <tr>
-            <td>باقة توليب كاملة</td>
-            <td>45 دينار</td>
-        </tr>
-    </table>
+        <h3>لطلب باقة ورد أرسل لنا:</h3>
+        <form>
+            <label>اسمكِ:</label>
+            <input type="text" placeholder="أدخلي اسمكِ">
 
-    <hr>
+            <label>نوع الورد المطلوب:</label>
+            <input type="text" placeholder="مثال: باقة توليب كاملة">
 
-    <!-- نموذج تواصل بسيط -->
-    <h3>لطلب باقة ورد أرسل لنا:</h3>
-    <form>
-        <label>اسمك:</label> <input type="text" name="username"><br><br>
-        <label>نوع الورد المطلوب:</label> <input type="text" name="flower"><br><br>
-        <input type="submit" value="إرسال الطلب">
-    </form>
+            <input type="submit" value="إرسال الطلب">
+        </form>
+    </div>
 
 </body>
 </html>
